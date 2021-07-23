@@ -13,7 +13,7 @@ services:
     #privileged: true
     tmpfs: 
       - /run
-        #- /tmp
+      - /tmp:exec
     volumes:
       - /sys/fs/cgroup:/sys/fs/cgroup:ro
     tty: true
